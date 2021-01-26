@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/layout-style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pavanam&display=swap" rel="stylesheet">
+
+
+    <title>Главная</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2" id="col-6-padding">
+        <ul class="nav-bar-ul">
+          <li><img class="image_logo" src="../assets/img/logo_portfel.png"></li>
+          <li><a href="main.php"><img src="../assets/icons/icon-home.png" style="position: relative; bottom: 2px;"> Главная</a></li>
+          <li><a href="requests.php"><img src="../assets/icons/icon-request.png"> Заявки</a></li>
+          <li><a href="investors.php"><img src="../assets/icons/icon-investor.png"> Инвесторы</a></li>
+          <li><a href="startups.php"><img src="../assets/icons/icon-startup.png"> Стартаперы</a></li>
+          <li><a href="announcements.php"><img src="../assets/icons/icon-announcement.png"> Объявление</a></li>
+          <li><a href="login.php"><img src="../assets/icons/icon-quit.png"> Выход</a></li>
+        </ul>
+      </div>
+
+      <div class="col-10" id="col-6-padding">
+<div class="container">
+  <div class="row bord">
+    <div class="col-lg-3 cont-block">
+      <p>Количество инвесторов</p>
+      <h4>45</h4>
+    </div>
+    <div class="col-lg-3 cont-block">
+      <p>Количество стартаперов</p>
+      <h2>70</h2>
+    </div>
+    <div class="col-lg-3 cont-block">
+      <p>Количество объявления</p>
+      <h2>160</h2>
+    </div>
+  </div>
+
+  <div class="project-content">
+    Топ объявлении
+  </div>
+  <table id="table-top-announcements">
+    <tr>
+      <th>Название</th>
+      <th>Показы</th>
+    </tr>
+    <tr>
+      <td>Проект по запуску эко пакетов... <a href="info.php">просмотреть</a> </td>
+      <td class="text-center">120</td>
+    </tr>
+    <tr>
+      <td>Машина плваожврне загрязня... <a href="info.php">просмотреть</a> </td>
+      <td class="text-center">110</td>
+    </tr>
+    <tr>
+      <td>Tesla <a href="info.php">просмотреть</a> </td>
+      <td class="text-center">98</td>
+    </tr>
+    <tr>
+      <td>Oculus <a href="info.php">просмотреть</a> </td>
+      <td class="text-center">85</td>
+    </tr>
+  </table>
+</div>
+<img class="image_pic" src="../assets/img/pic_admin.png">
+</div>
+    </div>
+  </div>
+
+</body>
+</html>
+<style>
+  .bord{
+    text-align: center;
+    line-height: 60px;
+  }
+  .cont-block{
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 150px;
+    margin: 3%;
+    width: 25% !important;
+    background-color: #C2E3F4;
+  }
+  .cont-block p{
+    font-size: 18px;
+  }
+  .cont-block h2{
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .project-content{
+    padding: 20px;
+    font-size: 24px;
+  }
+  #table-top-announcements{
+    width: 540px;
+  }
+  #table-top-announcements th, #table-top-announcements td{
+    padding: 12px;
+  }
+  #table-top-announcements th{
+    font-size: 24px;
+  }
+  #table-top-announcements td{
+    font-size: 20px;
+  }
+  #table-top-announcements tr{
+    border-bottom: 1px solid #195F8E;
+  }
+  #table-top-announcements a{
+    float: right;
+    font-size: 10px;
+    padding: 3px 20px;
+    border-radius: 15px;
+    background-color: #C4C4C4;
+    border: none;
+    outline-style: none;
+    text-decoration: none;
+    color: #000;
+  }
+  #table-top-announcements a:hover{
+    background-color: #195F8E;
+    color: white;
+  }
+</style>
