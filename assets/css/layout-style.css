@@ -1,4 +1,185 @@
 /* Styles for layouts */
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  margin: 0 15px;
+}
+
+.navigation{
+ position: fixed;
+ width: 60px;
+ height: 100%;
+ background: #C2E3F4;
+ transition: 0.5s;
+ overflow: hidden;
+ z-index: 999;
+}
+.navigation:hover,
+.navigation.active
+{
+
+ width: 270px;
+}
+
+.navigation ul {
+ position: absolute;
+ top: 40px;
+ left: 0;
+ width: 100%;
+}
+.navigation ul li{
+ position: relative;
+ width: 100%;
+ list-style: none;
+}
+.navigation ul li:hover{
+ background: rgb(151, 192, 231);
+}
+.navigation ul li a{
+ position: relative;
+ display: block;
+ width: 100%;
+ display: flex;
+ text-decoration: none;
+ color: #000;
+}
+.navigation ul li .icon{
+ position: relative;
+ display: block;
+ min-width: 60px;
+ height: 60px;
+ line-height: 60px;
+ text-align: center;
+}
+.navigation ul li .icon .fa{
+ font-size: 24px;
+}
+.navigation ul li .titlt{
+ position: relative;
+ display: block;
+ padding: 0 10px;
+ height: 60px;
+ line-height: 60px;
+ text-align: start;
+ white-space: nowrap;
+}
+.toggle{
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 60px;
+ height: 60px;
+ background: #8CD6FF;
+ ;
+ cursor: pointer;
+}
+.toggle:active{
+ 
+ background: #555b5e6b;
+}
+.toggle::before{
+ content: '\f0c9';
+ font-family: fontAwesome;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ line-height: 60px;
+ text-align: center;
+ font-size: 24px;
+ color: #fff;
+}
+.toggle:active::before{
+ content: '\f00d';
+}
+
+@media (max-width:767px){
+
+ .navigation{
+   left: -60px;
+ }
+ .navigation.active{
+   left: 0;
+   width: 100%;
+ }
+}
+
+@media(max-width:525px){
+ .content{
+   text-align: center;
+ }
+}
+@media(max-width:375px){
+  .toggle{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      background: #8CD6FF;
+      cursor: pointer
+  }
+ }
+.wrapper{
+  position: relative;
+  height: 100%;
+  padding: 50px;
+  z-index: 0;
+}
+
+.slider{
+  position: relative;
+}
+.slick-list{
+  overflow: hidden;
+}
+.slick-track{
+  display: flex;
+}
+
+.slider .slick-arrow{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 50px;
+}
+.slick-prev{
+  left: -40px;
+  background: url('../img/left-arrow.svg') 0 0 / 100% no-repeat;
+  outline: none !important;
+  border: none !important;
+  
+}
+.slick-prev:hover{
+  outline: none !important;
+  border: none !important;
+}
+.slick-next{
+  right: -40px;
+  background: url('../img/right-arrow.svg') 0 0 / 100% no-repeat;
+  outline: none !important;
+  border: none !important;
+
+}
+
+.simple-item{
+  margin-left: 280px;
+}
+
+.content{
+  top:150px;
+  margin-left: 295px;
+}
+
+
 .nav-bar-ul {
   list-style-type: none;
   width: 280px;
@@ -29,37 +210,41 @@
   weight: 400px;
   style: normal;
   border-radius: 10px;
+  margin-top: 100px;
+  
 }
 .simple-table, .simple-table td, .simple-table th {
   border-bottom: 1px solid black;
-  padding: 10px;
   text-align: center;
+  z-index: 0;
 }
 .simple-table tr th{
-  font-size: 20px;
+  font-size: 14px;
 }
 .simple-table tr td{
-  font-size: 17px;
+  font-size: 13px;
 }
 .simple-table {
   position: relative;
-  margin-top: 20px;
-  width: 100%;
-  border-collapse: collapse;
+    width: auto;
+    top: 70px;
+    border-collapse: collapse;
+  
 }
 .btn-reject{
   background-color: transparent;
   padding: 0px 4px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 .btn-accept{
   background-color: green;
   padding: 0px 4px;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 .wrapper{
   margin: 0 auto;
   position: relative;
+  top: 50px;
 }
 .btn-bck{
   color: #FFF9F9;

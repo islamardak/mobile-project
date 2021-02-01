@@ -1,125 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/layout-style.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pavanam&display=swap" rel="stylesheet">
-
-
-    <title>Главная</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="../assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/layout-style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pavanam&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <title>Главная</title>
 </head>
+
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-2" id="col-6-padding">
-        <ul class="nav-bar-ul">
-          <li><img class="image_logo" src="../assets/img/logo_portfel.png"></li>
-          <li><a href="main.php"><img src="../assets/icons/icon-home.png" style="position: relative; bottom: 2px;"> Главная</a></li>
-          <li><a href="requests.php"><img src="../assets/icons/icon-request.png"> Заявки</a></li>
-          <li><a href="investors.php"><img src="../assets/icons/icon-investor.png"> Инвесторы</a></li>
-          <li><a href="startups.php"><img src="../assets/icons/icon-startup.png"> Стартаперы</a></li>
-          <li><a href="announcements.php"><img src="../assets/icons/icon-announcement.png"> Объявление</a></li>
-          <li><a href="login.php"><img src="../assets/icons/icon-quit.png"> Выход</a></li>
-        </ul>
+
+  <!--------------------------------Sidebar--------------------------------------->
+  <div class="sidebar">
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="../admin/main.html">
+            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i>
+            </span>
+            <span class="title">Главная</span>
+          </a>
+        </li>
+        <li>
+          <a href="../admin/requests.html">
+            <span class="icon"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+            <span class="title">Заявки</span>
+          </a>
+        </li>
+        <li>
+          <a href="../admin/investors.html">
+            <span class="icon"><i class="fa fa-users" aria-hidden="true"></i>
+            </span>
+            <span class="title">Инвесторы</span>
+          </a>
+        </li>
+        <li>
+          <a href="../admin/startups.html">
+            <span class="icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            </span>
+            <span class="title">Стартаперы</span>
+          </a>
+        </li>
+        <li>
+          <a href="../admin/info.html">
+            <span class="icon"><i class="fa fa-comments-o" aria-hidden="true"></i>
+            </span>
+            <span class="title">Обьявление</span>
+          </a>
+        </li>
+        <li>
+          <a href="../admin/login.html">
+            <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i>
+            </span>
+            <span class="title">Выход</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <!--------------------------------contant--------------------------------------->
+    <div class="wrapper">
+      <div class="slider">
+        <div class="slider__item">
+          <div class="col-md-4 cont-block">
+            <p>Количество инвесторов</p>
+            <h2>45</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="col-md-4 cont-block">
+            <p>Количество стартаперов</p>
+            <h2>70</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="col-md-4 cont-block">
+            <p>Количество объявления</p>
+            <h2>160</h2>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <div class="col-10" id="col-6-padding">
-<div class="container">
-  <div class="row bord">
-    <div class="col-lg-3 cont-block">
-      <p>Количество инвесторов</p>
-      <h4>45</h4>
-    </div>
-    <div class="col-lg-3 cont-block">
-      <p>Количество стартаперов</p>
-      <h2>70</h2>
-    </div>
-    <div class="col-lg-3 cont-block">
-      <p>Количество объявления</p>
-      <h2>160</h2>
+    <!--------------------------------Table--------------------------------------->
+    <div class="card">
+      <div class="project-content">
+        Топ объявлении
+      </div>
+      <table id="table-top-announcements">
+        <tr>
+          <th>Название</th>
+          <th>Показы</th>
+        </tr>
+        <tr>
+          <td>Проект по запуску эко пакетов...<a href="../admin/info.html">просмотреть</a> </td>
+          <td class="text-center">120</td>
+        </tr>
+        <tr>
+          <td>Машина плваожврне загрязня... <a href="../admin/info.html">просмотреть</a> </td>
+          <td class="text-center">110</td>
+        </tr>
+        <tr>
+          <td class="block-text">Tesla<a href="../admin/info.html">просмотреть</a> </td>
+          <td class="text-center">98</td>
+        </tr>
+        <tr>
+          <td class="block-text">Oculus<a href="../admin/info.html">просмотреть</a> </td>
+          <td class="text-center">85</td>
+        </tr>
+      </table>
     </div>
   </div>
 
-  <div class="project-content">
-    Топ объявлении
-  </div>
-  <table id="table-top-announcements">
-    <tr>
-      <th>Название</th>
-      <th>Показы</th>
-    </tr>
-    <tr>
-      <td>Проект по запуску эко пакетов... <a href="info.php">просмотреть</a> </td>
-      <td class="text-center">120</td>
-    </tr>
-    <tr>
-      <td>Машина плваожврне загрязня... <a href="info.php">просмотреть</a> </td>
-      <td class="text-center">110</td>
-    </tr>
-    <tr>
-      <td>Tesla <a href="info.php">просмотреть</a> </td>
-      <td class="text-center">98</td>
-    </tr>
-    <tr>
-      <td>Oculus <a href="info.php">просмотреть</a> </td>
-      <td class="text-center">85</td>
-    </tr>
-  </table>
-</div>
-<img class="image_pic" src="../assets/img/pic_admin.png">
-</div>
-    </div>
-  </div>
+  <!--------------------------------JS--------------------------------------->
+  <div class="toggle" onclick="toggleMenu()"></div>
+  <script type="text/javascript">
+    function toggleMenu() {
+      let navigation = document.querySelector('.navigation');
+      navigation.classList.toggle('active');
+      toggle.classList.toggle('active');
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
+  <script src="../assets/js/main.js"></script>
 
+  </div>
 </body>
+
 </html>
+
+<!--------------------------------Style--------------------------------------->
+
 <style>
-  .bord{
+  .bord {
     text-align: center;
-    line-height: 60px;
+    line-height: 30px;
   }
-  .cont-block{
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cont-block {
     border: 1px solid black;
     border-radius: 25px;
-    height: 150px;
-    margin: 3%;
-    width: 25% !important;
     background-color: #C2E3F4;
+    padding: 10px 50px;
+    z-index: -1;
+    margin-top: 15px;
+
   }
-  .cont-block p{
+
+  .cont-block p {
     font-size: 18px;
   }
-  .cont-block h2{
+
+  .cont-block h2 {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 500px;
   }
-  .project-content{
-    padding: 20px;
+
+  .card {
+
+    margin-top: 100px;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border: none !important;
+    z-index: 0;
+  }
+
+  .project-content {
+    font-weight: bold;
     font-size: 24px;
+    text-align: center;
+    font-family: 'Pavanam', sans-serif;
   }
-  #table-top-announcements{
-    width: 540px;
+
+  #table-top-announcements {
+    width: 800px;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 30px;
+
   }
-  #table-top-announcements th, #table-top-announcements td{
-    padding: 12px;
+
+  #table-top-announcements th,
+  #table-top-announcements td {
+    padding: 10px;
+
   }
-  #table-top-announcements th{
-    font-size: 24px;
+
+  #table-top-announcements th {
+    font-size: 16px;
   }
-  #table-top-announcements td{
-    font-size: 20px;
+
+  #table-top-announcements,
+  .block-text {}
+
+  #table-top-announcements td {
+    font-size: 16px;
   }
-  #table-top-announcements tr{
+
+  #table-top-announcements tr {
     border-bottom: 1px solid #195F8E;
   }
-  #table-top-announcements a{
+
+  #table-top-announcements a {
     float: right;
     font-size: 10px;
     padding: 3px 20px;
@@ -130,7 +232,8 @@
     text-decoration: none;
     color: #000;
   }
-  #table-top-announcements a:hover{
+
+  #table-top-announcements a:hover {
     background-color: #195F8E;
     color: white;
   }

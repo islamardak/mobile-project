@@ -1,0 +1,46 @@
+ <!--------------------------------contant--------------------------------------->
+  
+    <div class="row bord">
+
+      <div class="col-md-4 cont-block">
+        <p>Количество инвесторов</p>
+        <h2>45</h2>
+      </div>
+      <div class="col-md-4 cont-block">
+        <p>Количество стартаперов</p>
+        <h2>70</h2>
+      </div>
+      <div class="col-md-4 cont-block">
+        <p>Количество объявления</p>
+        <h2>160</h2>
+      </div>
+    </div>
+
+
+
+    <div class="wrapper">
+      <div class="slider" style = "position: relative;">
+
+        <div class="slider__item">
+          <div class="col-md-4 cont-block">
+            <p>Количество инвесторов</p>
+            <h2>45</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="col-md-4 cont-block">
+            <p>Количество стартаперов</p>
+            <h2>70</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="col-md-4 cont-block">
+            <p>Количество объявления</p>
+            <h2>160</h2>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+      <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>

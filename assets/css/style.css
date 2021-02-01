@@ -1,37 +1,48 @@
 body{
   font-family: 'Pavanam', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-weight: 400;
+  line-height: 18px;
+  
 }
 *{
  margin: 0;
  padding: 0;
 }
+
+
+
+
+
 #col-6-padding{
-  padding: 0
+  
+    top: 40px;
+    max-width: 100%;
 }
-.image_logo{
-    position: absolute;
-    width: 134px;
-    height: auto;
-    left: 40px;
-    top: 50px;
-}
+
+
+
 .image_pic{
   position: absolute;
-  width: 350px;
+  width: 200px;
   height: auto;
-  right: 10px;
-  bottom: 10px;
+  
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
-.limiter{
-  margin-top: 10%
+.pic_admin{
+  z-index: -1;
+}
+@media(max-width:812px){
+  .image_pic{
+    bottom: 0;
+  }
 }
 
 .form-signin {
   max-width: 380px;
   padding: 25px 35px 45px;
-  margin: 0 auto;
+  margin: 30px;
   background-color: #8CD6FF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -71,3 +82,4 @@ body{
     top: 10px
   }
 }
+

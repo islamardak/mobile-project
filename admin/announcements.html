@@ -16,19 +16,54 @@
     <title>Панель Админа</title>
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-2" id="col-6-padding">
-        <ul class="nav-bar-ul">
-          <li><img class="image_logo" src="../assets/img/logo_portfel.png"></li>
-          <li><a href="main.php"><img src="../assets/icons/icon-home.png" style="position: relative; bottom: 2px;"> Главная</a></li>
-          <li><a href="requests.php"><img src="../assets/icons/icon-request.png"> Заявки</a></li>
-          <li><a href="investors.php"><img src="../assets/icons/icon-investor.png"> Инвесторы</a></li>
-          <li><a href="startups.php"><img src="../assets/icons/icon-startup.png"> Стартаперы</a></li>
-          <li><a href="announcements.php"><img src="../assets/icons/icon-announcement.png"> Объявление</a></li>
-          <li><a href="login.php"><img src="../assets/icons/icon-quit.png"> Выход</a></li>
-        </ul>
-      </div>
+  <div class="sidebar">
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i>
+            </span>
+            <span class="title">Главная</span>
+          </a>
+        </li>
+        <li>
+          <a href="../admin/requests.html">
+            <span class="icon"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+            <span class="title">Заявки</span>
+          </a>
+        </li>
+        <li>
+          <a href="../admin/i">
+            <span class="icon"><i class="fa fa-users" aria-hidden="true"></i>
+            </span>
+            <span class="title">Инвесторы</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            </span>
+            <span class="title">Стартаперы</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-comments-o" aria-hidden="true"></i>
+            </span>
+            <span class="title">Обьявление</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i>
+            </span>
+            <span class="title">Выход</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 
       <div class="col-10" id="col-6-padding">
   <button type="submit" name="button" class="btn btn-primary btn-style"> Объявления</button>
@@ -51,6 +86,13 @@
 </div>
     </div>
   </div>
-
+  <div class="toggle" onclick="toggleMenu()"></div>
+  <script type="text/javascript">
+  function toggleMenu(){
+    let navigation = document.querySelector('.navigation');
+    navigation.classList.toggle('active');
+    toggle.classList.toggle('active');
+  }
+</script>
 </body>
 </html>
